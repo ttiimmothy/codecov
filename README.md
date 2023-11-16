@@ -1,5 +1,4 @@
-# Codecov GitHub Action
-
+# Codecov
 [![GitHub Marketplace](https://img.shields.io/badge/Marketplace-v3-undefined.svg?logo=github&logoColor=white&style=flat)](https://github.com/marketplace/actions/codecov)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fcodecov-action.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fcodecov-action?ref=badge_shield)
 [![Workflow for Codecov Action](https://github.com/codecov/codecov-action/actions/workflows/main.yml/badge.svg)](https://github.com/codecov/codecov-action/actions/workflows/main.yml)
@@ -9,6 +8,7 @@
 `v4` of the Codecov GitHub Action will use the [Codecov CLI](https://github.com/codecov/codecov-cli) to upload coverage reports to Codecov. Currently, `v4` is in beta.
 
 Breaking Changes
+
 - No current support for `aarch64` and `alpine` architectures.
 - Tokenless uploading is unsupported
 - Various arguments to the Action have been removed
@@ -44,6 +44,7 @@ steps:
     fail_ci_if_error: true # optional (default = false)
     verbose: true # optional (default = false)
 ```
+
 >**Note**: This assumes that you've set your Codecov token inside *Settings > Secrets* as `CODECOV_TOKEN`. If not, you can [get an upload token](https://docs.codecov.io/docs/frequently-asked-questions#section-where-is-the-repository-upload-token-found-) for your specific repo on [codecov.io](https://www.codecov.io). Keep in mind that secrets are *not* available to forks of repositories.
 
 ## Arguments
@@ -129,12 +130,13 @@ jobs:
         name: codecov-umbrella
         verbose: true
 ```
+
 ## Contributing
 
 Contributions are welcome! Check out the [Contribution Guide](CONTRIBUTING.md).
 
 ## License
 
-The code in this project is released under the [MIT License](LICENSE).
+Codecov is licensed under [GNU General Public License v3.0](LICENSE).
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fcodecov-action.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fcodecov-action?ref=badge_large)
